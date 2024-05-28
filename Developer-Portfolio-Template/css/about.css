@@ -1,0 +1,314 @@
+/* General Styles */
+/* about-me.css */
+:root {
+    --primary-color: #003366; /* Deep Navy Blue */
+    --pc-08: rgba(0,51,102,0.95); /* Deep Navy Blue */
+    --accent-color: #FB8500; /* Vibrant Orange */
+    --header-bg-color: #2A2C2B; /* Charcoal Gray for Header */
+    --text-color: #E5E4E2; /* Platinum for text, ensures good readability */
+    --background-color: #F0F2F5; /* Light Gray for the main background */
+    --secondary-bg-color: #E1E5EA; /* Slightly darker gray for sections or hover states */
+    --highlight-color: #FFD60A; /* Bright Yellow for highlighting key elements */
+    --subtle-accent-color: #A8DADC; /* Soft Teal for less prominent accents */
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: 'Montserrat', sans-serif;
+    background: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+p{
+    color: var(--header-bg-color);
+}
+h3{
+    color: var(--accent-color);
+}
+header {
+    width: 100%;
+    height: 4rem;
+    background: #F0F2F5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 5px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+header #logo img {
+    height: 2.5rem;
+}
+
+header a {
+    text-decoration: none;
+    text-align: center;
+    padding: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #003366;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    
+}
+
+h2 {
+    color: var(--primary-color);
+    margin: 40px 0 20px;
+}
+
+/* Hobbies Section */
+#hobbies ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center; /* Center aligning the list */
+}
+
+#hobbies li {
+    margin-bottom: 10px;
+    
+}
+#hobbies ul li {
+    color: var(--header-bg-color);
+}
+
+.highlight {
+    color: var(--accent-color);
+    font-weight: bold;
+}
+
+/* Experience, Education, Certifications styles */
+.experience-entry, .education-entry {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-direction: column; /* Adjusting for vertical layout */
+}
+
+.experience-logo, .education-logo {
+    width: 30px;
+    margin-right: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container > div > div {
+        padding: 0 20px;
+    }
+
+    #hobbies ul {
+        text-align: center;
+    }
+
+    .experience-entry, .education-entry {
+        flex-direction: column;
+    }
+}
+
+.footer {
+    background: #F0F2F5;
+    padding: 10px 0px;
+    text-align: center;
+    margin-top: 3rem;
+    box-shadow: 5px 0px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .footer .row {
+    width: 100%;
+    margin: 1% 0%;
+    padding: 0.6% 0%;
+    color: gray;
+    font-size: 0.8em;
+  }
+  
+  .footer .row a {
+    text-decoration: none;
+    color: gray;
+    transition: 0.5s;
+  }
+  
+  .footer .row a:hover {
+    color: #fff;
+  }
+  
+  .footer .row ul {
+    width: 100%;
+  }
+  
+  .footer .row ul li {
+    display: inline-block;
+    margin: 0px 30px;
+  }
+  
+  .footer .row a i {
+    font-size: 2em;
+    margin: 0% 1%;
+  }
+
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+section {
+    background: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.profile-pic {
+    width: 200px;
+    border-radius: 50%; /* Adjust for circle or square */
+    margin: auto;
+    display: block;
+}
+
+
+.skills-category, .certification-entry {
+    margin-bottom: 15px;
+}
+
+.certification-entry img {
+    width: 100px; /* Adjust based on your image sizes */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .skills-category, .certification-entry {
+        text-align: center;
+    }
+}
+
+/* Add additional styles based on your design preferences */
+/* Existing styles... */
+
+/* SwiperJS styles for Certifications */
+.swiper {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.swiper-slide img {
+    display: block;
+    width: auto;
+    max-height: 80%;
+}
+
+/* Adjustments for responsiveness */
+@media (max-width: 768px) {
+    .swiper {
+        width: 100%;
+    }
+    .swiper-slide {
+        width: 100%;
+        height: 200px;
+    }
+}
+.skills-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+#technical-skills, #professional-skills {
+    flex: 1;
+    min-width: calc(50% - 10px); /* Adjust based on gap and padding */
+}
+
+.about-logos {
+    margin: 2vh 0 2vh 0;
+    width: 30vh;
+}
+.burger-menu {
+    display: none; /* Hide the burger menu icon by default */
+    cursor: pointer;
+}
+
+.burger-menu i {
+    font-size: 24px;
+    color: #333;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    #technical-skills, #professional-skills {
+        min-width: 100%;
+    }
+}
+/* Show burger menu icon for responsive screens */
+@media (max-width: 768px) {
+    .burger-menu {
+        display: block;
+        margin-top: 10px; /* Add margin to position the burger menu below the navigation */
+        text-align: center; /* Center align the burger menu */
+    }
+
+    #nav {
+        display: none; /* Hide the navigation menu by default for responsive screens */
+        flex-direction: column; /* Display menu items vertically */
+        align-items: center; /* Center align menu items */
+        width: 100%; /* Set width to full screen */
+        padding-top: 20px; /* Add padding for spacing */
+        position: absolute; /* Position menu below the burger menu */
+        top: 100%; /* Place menu below the burger menu */
+        left: 0; /* Align menu to the left edge */
+        background-color: #f9f9f9; /* Background color for menu */
+        border-top: 1px solid #ddd; /* Add border at the top */
+    }
+
+    #nav a {
+        display: block;
+        font-size: 14px; /* Reduce font size for navigation links on smaller screens */
+        padding: 10px 0; /* Add padding to each menu item */
+        width: 100%; /* Set width to full */
+        text-align: center; /* Center align menu items */
+        border-bottom: 1px solid #ddd; /* Add border at the bottom of each menu item */
+    }
+}
+
+
+
+
+
+
+

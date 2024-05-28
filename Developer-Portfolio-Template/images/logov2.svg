@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 645 114">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: 0em;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        fill: #fafaf0;
+      }
+
+      .cls-2 {
+        letter-spacing: .01em;
+      }
+
+      .cls-5, .cls-6 {
+        fill: #f60;
+      }
+
+      .cls-6, .cls-7 {
+        stroke-width: 0px;
+      }
+
+      .cls-7 {
+        fill: #1e1e1e;
+        opacity: .98;
+      }
+
+      .cls-4 {
+        letter-spacing: 0em;
+      }
+
+      .cls-8 {
+        font-family: Aceh-Light, Aceh;
+        font-size: 70px;
+        font-weight: 300;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g>
+      <rect class="cls-7" width="479" height="114" rx="26.82" ry="26.82"/>
+      <text class="cls-8" transform="translate(31 76.1)"><tspan x="0" y="0"> </tspan><tspan class="cls-3" x="17.5" y="0">s</tspan><tspan class="cls-4" x="48.09" y="0">l</tspan><tspan class="cls-3" x="62.86" y="0">im</tspan><tspan class="cls-5" x="138.53" y="0">(</tspan><tspan class="cls-2" x="159.6" y="0">b</tspan><tspan class="cls-3" x="198.59" y="0">our</tspan><tspan class="cls-1" x="295.12" y="0">a</tspan><tspan class="cls-3" x="332.99" y="0">s</tspan><tspan class="cls-5" x="363.58" y="0">){}</tspan></text>
+      <path class="cls-6" d="m34,86.74V30.26c.01-4.49-2.67-2.95-3.73-3.19-.67,0-1.27,1.51-1.27,3.19v56.48c-.01,4.49,2.67,2.95,3.73,3.19.73,0,1.27-1.51,1.27-3.19Z"/>
+    </g>
+  </g>
+</svg>

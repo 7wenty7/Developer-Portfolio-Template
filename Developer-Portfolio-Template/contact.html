@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css"> 
+    <link rel="stylesheet" href="css/contact.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <title>Contact</title>
+    <link rel="icon" type="image/x-icon" href="images/icon-sb.svg">
+
+</head>
+<body>
+    <header>
+        <div id="logo"><a href="index.php"><img src="images/logo-sb.svg" alt=""></a></div>
+        <div class="burger-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div id="nav">
+            <a href="https://cv.slimbouras.com/">CV</a>
+            <a href="about.html">À PROPOS</a>
+            <a href="projects.html">PROJETS</a>
+            <a href="contact.html">CONTACT</a>
+        </div>
+    </header>
+    <div class="contact-header">
+        <h1>Restons en contact !</h1>
+        <p>Je suis ravi que vous ayez pris contact. Je suis là pour répondre à toutes vos questions ou simplement discuter. <br>Ensemble, créons quelque chose d'exceptionnel.</p>
+    </div>
+    
+
+    <main class="contact-container">
+        <section class="contact-info">
+            <h2>Contactez-moi</h2>
+            <br>
+            <p>N'hésitez pas à me contacter si vous recherchez un développeur, si vous avez une question, ou si vous souhaitez simplement échanger.</p>
+            <br>
+            <div class="contact-methods">
+                <div>
+                    <i class="fas fa-envelope"></i>
+                    <p>Email: <a href="mailto:contact@slimbouras.com" class="email-link">contact@slimbouras.com</a></p>
+                </div>
+                <div>
+                    <i class="fa fa-linkedin"></i>
+                    <p>LinkedIn: <a href="https://www.linkedin.com/in/slimbouras/" class="contact-link" target="_blank"> Message me on LinkedIn</a></p>
+
+                </div>
+            
+                <div>
+                    <i class="fas fa-phone"></i>
+                    <p>+33 6 24 42 29 17</p>
+                </div>
+                <div>
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>Paris, France</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="contact-form">
+            <form id="contact-form" action="contact.php" method="POST">
+                <input type="text" id="name" name="name" placeholder="Nom" required>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+                <input type="text" id="object" name="object" placeholder="Objet" required>
+                <textarea id="message" name="message" placeholder="Votre Message" rows="5" required></textarea>
+                <button type="submit" class="button">Envoyer</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer">
+        <div class="row">
+        <a href="mailto:contact@slimbouras.com"><i class="fa-regular fa-envelope"></i></a>
+        <a href="https://github.com/7wenty7"><i class="fa fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/slimbouras/"><i class="fa fa-linkedin"></i></a>
+        </div>
+        
+        <div class="row">
+        <ul>
+            <li><a href="https://cv.slimbouras.com/">CV</a></li>
+            <li><a href="about.html">À PROPOS</a></li>
+            <li><a href="projects.html">PROJETS</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+        </div>
+        
+        <div class="row">
+         Copyright © 2024 Slim Bouras - All rights reserved  
+        </div>
+        </div>
+        </footer>
+    <script src="https://kit.fontawesome.com/d23bd1244a.js" crossorigin="anonymous"></script><script src="carousel.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script>
+        window.onload = function() {
+            var urlParams = new URLSearchParams(window.location.search);
+            if (urlParams.has('message') && urlParams.get('message') === 'success') {
+                alert('Your message has been sent successfully.');
+                // Optionally, remove the query string from URL
+                history.pushState(null, '', 'contact.html');
+            }
+        };
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <script>
+                $(document).ready(function() {
+                    $('.burger-menu').click(function() {
+                    $('#nav').slideToggle();
+                                        });
+                                            });
+
+            </script>
+    
+    
+</body>
+</html>

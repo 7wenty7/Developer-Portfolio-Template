@@ -1,0 +1,207 @@
+body, html {
+    font-family: 'Montserrat', sans-serif;
+    background: var(--background-color); 
+    color: var(--text-color); 
+}
+
+.container {
+    max-width: 1200px; 
+    margin: auto; 
+    padding: 20px;
+    text-align: center; 
+}
+
+header {
+    width: 100%;
+    height: 4rem;
+    background: #F0F2F5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 5px 0px 5px rgba(0, 0, 0, 0.3);
+    margin-bottom: 4vh;
+}
+
+header #logo img {
+    height: 2.5rem;
+}
+
+header a {
+    text-decoration: none;
+    text-align: center;
+    padding: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #003366;
+}
+
+.filter-tags {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; 
+    margin-bottom: 20px; 
+}
+
+.tag-filter {
+    background: var(--accent-color); 
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.tag-filter:hover {
+    background: var(--highlight-color); 
+}
+
+.projects-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 20px; 
+}
+
+.project-box {
+    width: calc(33.333% - 20px); 
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.project-box img {
+    width: 100%; 
+    max-width: 150px; 
+    height: auto; 
+    border-radius: 5px;
+}
+
+.project-box h3, .project-box p {
+    margin: 10px 0; 
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+.project-tags .tag {
+    background: var(--primary-color); 
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+.project-box .button {
+    background: var(--highlight-color); 
+    color: var(--header-bg-color); 
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.project-box .button:hover {
+    background-color: var(--accent-color); 
+}
+
+@media (max-width: 960px) {
+    .project-box {
+        width: calc(50% - 20px); 
+    }
+}
+
+@media (max-width: 680px) {
+    .project-box {
+        width: 100%; 
+    }
+}
+.github-banner {
+    text-align: center;
+    margin: 20px auto;
+    padding: 15px;
+    background-color: var(--primary-color); 
+    color: #fff; 
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    max-width: 80%;
+    opacity: 0; 
+    animation: fadeInAnimation 2s forwards; 
+}
+
+.github-banner p {
+    margin: 0;
+    font-size: 1.2rem; 
+}
+
+.github-banner a {
+    color: #fff; 
+    font-weight: bold;
+    padding: 0 5px; 
+}
+
+.github-banner a:hover {
+    color: var(--highlight-color); 
+}
+
+@keyframes fadeInAnimation {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+.burger-menu {
+    display: none; /* Hide the burger menu icon by default */
+    cursor: pointer;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.burger-menu i {
+    font-size: 24px;
+    color: #333;
+}
+/* Show burger menu icon for responsive screens */
+@media (max-width: 768px) {
+    .burger-menu {
+        display: block;
+        margin-top: 10px; /* Add margin to position the burger menu below the navigation */
+        text-align: center; /* Center align the burger menu */
+    }
+
+    #nav {
+        display: none; /* Hide the navigation menu by default for responsive screens */
+        flex-direction: column; /* Display menu items vertically */
+        align-items: center; /* Center align menu items */
+        width: 100%; /* Set width to full screen */
+        padding-top: 20px; /* Add padding for spacing */
+        position: absolute; /* Position menu below the burger menu */
+        top: 100%; /* Place menu below the burger menu */
+        left: 0; /* Align menu to the left edge */
+        background-color: #f9f9f9; /* Background color for menu */
+        border-top: 1px solid #ddd; /* Add border at the top */
+    }
+
+    #nav a {
+        display: block;
+        font-size: 14px; /* Reduce font size for navigation links on smaller screens */
+        padding: 10px 0; /* Add padding to each menu item */
+        width: 100%; /* Set width to full */
+        text-align: center; /* Center align menu items */
+        border-bottom: 1px solid #ddd; /* Add border at the bottom of each menu item */
+    }
+}
+

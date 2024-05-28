@@ -1,0 +1,209 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/projects.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!--FONT AWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet"> 
+    <title>Slim Bouras - Projects</title>
+    <link rel="icon" type="image/x-icon" href="images/icon.svg">
+
+</head>
+<body>
+    <header>
+        <div id="logo"><a href="index.php"><img src="images/logo-sb.svg" alt=""></a></div>
+        <div class="burger-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div id="nav">
+            <a href="https://cv.slimbouras.com/">CV</a>
+            <a href="about.html">À PROPOS</a>
+            <a href="projects.html">PROJETS</a>
+            <a href="contact.html">CONTACT</a>
+        </div>
+    </header>
+    <main>
+
+        <div class="filter-tags">
+            <!-- Filter buttons for tags -->
+            <button class="tag-filter" data-tag="all">All</button>
+            <button class="tag-filter" data-tag="html">HTML</button>
+            <button class="tag-filter" data-tag="css">CSS</button>
+            <button class="tag-filter" data-tag="js">JS</button>
+            <button class="tag-filter" data-tag="php">PHP</button>
+            <button class="tag-filter" data-tag="python">Python</button>
+            <button class="tag-filter" data-tag="Wordpress">Worpress</button>
+            <button class="tag-filter" data-tag="WooCommerce">WooCommerce</button>
+
+            <!-- Add more tags as needed -->
+        </div>
+        <div class="github-banner">
+            <p>Envie de suivre mes explorations en codage ?<a href="https://github.com/7wenty7" target="_blank">Rejoignez-moi sur GitHub.</a></p>
+        </div>
+        
+        <div id="projects-page">
+
+        
+            <div class="projects-grid">
+                <!-- Repeat for each project -->
+                <div class="project-box" data-tags="html,js,css,php,sql,WooCommerce">
+                    <img src="images/wedo.png" alt="Project Image">
+                    <h3>Site WeDo Distribution Services</h3>
+                    <p>Site E-commerce B2B conçus avec Wordpress et WooCommerce</p>
+                    <div class="project-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">PHP</span>
+                        <span class="tag">Javascript</span>
+                        <span class="tag">SQL</span>
+                        <span class="tag">WooCommerce</span>
+                    </div>
+                    <a href="https://www.wedodistribution.tn/" class="button">Voir le Projet</a>
+                </div>
+                <div class="project-box" data-tags="html,js,css,php,sql,Wordpress">
+                    <img src="images/velostar.png" alt="Project Image">
+                    <h3>Site Velostar Organisation</h3>
+                    <p>Site vitrine conçus avec worpress.</p>
+                    <div class="project-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">PHP</span>
+                        <span class="tag">Wordpress</span>
+
+                    </div>
+                    <a href="https://velostarorganisation.com/" class="button">Voir le Projet</a>
+                </div>
+                <div class="project-box" data-tags="html,css,js">
+                    <img src="images/logov1.svg" alt="Project Image">
+                    <h3>Modèle de CV pour développeurs en ligne</h3>
+                    <p>Developer-CV-Template est un modèle de CV élégant pour développeurs en HTML, CSS et JS, offrant des modes sombre et clair, des capacités multilingues et une personnalisation facile.</p>
+                    <div class="project-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JavaScript</span>
+                    </div>
+                    <a href="https://github.com/7wenty7/Developer-CV-Template" class="button">Voir le Projet</a>
+                </div>
+                <div class="project-box" data-tags="html,css,php,js,sql">
+                    <img src="images/logov1.svg" alt="Project Image">
+                    <h3>Portfolio pour développeurs</h3>
+                    <p>Un modèle élégant et personnalisable en HTML, CSS, JavaScript et PHP , conçu pour mettre en valeur les compétences et les projets de manière claire et attrayante.</p>
+                    <div class="project-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">PHP</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">SQL</span>
+                    </div>
+                    <a href="https://github.com/7wenty7/Developer-Portfolio-Template" class="button">Voir le Projet</a>
+                </div>
+                <div class="project-box" data-tags="php,html,css,sql">
+                    <img src="images/logov1.svg" alt="Project Image">
+                    <h3>Systéme de Facturation</h3>
+                    <p>Systéme de Facturation en ligne  conçus avec PHP et MySql.</p>
+                    <div class="project-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">PHP</span>
+                        <span class="tag">SQL</span>
+                    </div>
+                    <a href="#" class="button">Voir le Projet</a>
+                </div>
+                <!-- More projects here -->
+            </div>
+        </div> 
+
+            
+        </main>
+
+        <footer>
+            <div class="footer">
+            <div class="row">
+            <a href="mailto:contact@slimbouras.com"><i class="fa-regular fa-envelope"></i></a>
+            <a href="https://github.com/7wenty7"><i class="fa fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/slimbouras/"><i class="fa fa-linkedin"></i></a>
+            </div>
+            
+            <div class="row">
+            <ul>
+                <li><a href="../cv.slimbouras.com">CV</a></li>
+                <li><a href="about.html">À PROPOS</a></li>
+                <li><a href="projects.html">PROJETS</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+            </div>
+            
+            <div class="row">
+             Copyright © 2024 Slim Bouras - All rights reserved  
+            </div>
+            </div>
+            </footer>
+        <script src="https://kit.fontawesome.com/d23bd1244a.js" crossorigin="anonymous"></script><script src="carousel.js"></script>
+        
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const filterButtons = document.querySelectorAll('.tag-filter');
+                const projectsContainer = document.querySelector('.projects-grid');
+                const projects = document.querySelectorAll('.project-box');
+
+                function clearPlaceholders() {
+                    document.querySelectorAll('.project-placeholder').forEach(placeholder => {
+                        projectsContainer.removeChild(placeholder);
+                    });
+                }
+
+                function addPlaceholders(visibleProjectsCount) {
+                    clearPlaceholders(); // Remove existing placeholders first
+                    const placeholdersNeeded = 3 - (visibleProjectsCount % 3);
+                    if (placeholdersNeeded < 3) {
+                        for (let i = 0; i < placeholdersNeeded; i++) {
+                            const placeholder = document.createElement('div');
+                            placeholder.className = 'project-box project-placeholder';
+                            placeholder.style.visibility = 'hidden'; // Make placeholder invisible
+                            projectsContainer.appendChild(placeholder);
+                        }
+                    }
+                }
+
+                filterButtons.forEach(button => {
+                    button.addEventListener('click', () => {
+                        const tag = button.getAttribute('data-tag');
+                        let visibleProjectsCount = 0;
+                        projects.forEach(project => {
+                            const projectTags = project.getAttribute('data-tags').split(',');
+                            if (tag === 'all' || projectTags.includes(tag)) {
+                                project.style.display = 'flex';
+                                visibleProjectsCount++;
+                            } else {
+                                project.style.display = 'none';
+                            }
+                        });
+                        addPlaceholders(visibleProjectsCount);
+                    });
+                });
+            });
+            </script>
+                        <script>
+                            $(document).ready(function() {
+                                $('.burger-menu').click(function() {
+                                $('#nav').slideToggle();
+                                                    });
+                                                        });
+            
+                        </script>
+                            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+ 
+</body>
+</html>

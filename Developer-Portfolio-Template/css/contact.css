@@ -1,0 +1,143 @@
+.contact-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    text-align: center;
+}
+
+.contact-info, .contact-form {
+    flex: 1;
+    margin: 20px;
+}
+
+.contact-methods div {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.contact-methods i {
+    margin-right: 10px;
+    color: var(--primary-color);
+    
+}
+
+
+#contact-form input, #contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid var(--secondary-bg-color);
+    border-radius: 5px;
+}
+
+.button {
+    width: 80%;
+    padding: 10px;
+    background-color: var(--accent-color);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    
+}
+
+.button:hover {
+    background-color: var(--highlight-color);
+}
+
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+    }
+}
+body, h1, h2, h3, h4, h5, h6, p {
+    color: #333333; 
+}
+.email-link {
+    color: var(--primary-color); 
+    text-decoration: none; 
+}
+
+.email-link:hover {
+    color: var(--accent-color); 
+    text-decoration: underline;
+}
+.contact-link {
+    color: var(--primary-color); 
+    text-decoration: none; 
+}
+
+.contact-link:hover {
+    color: var(--accent-color); 
+    text-decoration: underline;
+}
+
+.fa-linkedin { 
+    margin-right: 5px; 
+}
+.contact-header {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.contact-header h1 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.contact-header p {
+    font-size: 1.2rem;
+    color: var(--accent-color);
+    max-width: 600px;
+    margin: auto; 
+}
+.burger-menu {
+    display: none; /* Hide the burger menu icon by default */
+    cursor: pointer;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.burger-menu i {
+    font-size: 24px;
+    color: #333;
+}
+
+/* Show burger menu icon for responsive screens */
+@media (max-width: 768px) {
+    .burger-menu {
+        display: block;
+        margin-top: 10px; /* Add margin to position the burger menu below the navigation */
+        text-align: center; /* Center align the burger menu */
+    }
+
+    #nav {
+        display: none; /* Hide the navigation menu by default for responsive screens */
+        flex-direction: column; /* Display menu items vertically */
+        align-items: center; /* Center align menu items */
+        width: 100%; /* Set width to full screen */
+        padding-top: 20px; /* Add padding for spacing */
+        position: absolute; /* Position menu below the burger menu */
+        top: 100%; /* Place menu below the burger menu */
+        left: 0; /* Align menu to the left edge */
+        background-color: #f9f9f9; /* Background color for menu */
+        border-top: 1px solid #ddd; /* Add border at the top */
+    }
+
+    #nav a {
+        display: block;
+        font-size: 14px; /* Reduce font size for navigation links on smaller screens */
+        padding: 10px 0; /* Add padding to each menu item */
+        width: 100%; /* Set width to full */
+        text-align: center; /* Center align menu items */
+        border-bottom: 1px solid #ddd; /* Add border at the bottom of each menu item */
+    }
+}
+
+
+
