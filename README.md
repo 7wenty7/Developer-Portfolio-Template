@@ -1,5 +1,5 @@
 # Developer-Portfolio-Template
-[Portfolio-Slim-Bouras.jpg](https://postimg.cc/5Yj3PK5Q)
+![Portfolio-Slim-Bouras.jpg](https://postimg.cc/5Yj3PK5Q)
 ## Demo
 Check out the live demo: [SlimBouras.com](https://slimbouras.com/)
 
