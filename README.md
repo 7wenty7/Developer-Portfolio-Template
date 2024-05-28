@@ -1,4 +1,7 @@
 # Developer-Portfolio-Template
+ ![Snapshot]([image-ur](https://i.ibb.co/93YjyH1/Portfolio-Slim-Bouras.jpg)l)
+## Demo
+Check out the live demo: [SlimBouras.com](https://slimbouras.com/)
 
 ## Description
 This repository contains the source code for a personal portfolio website. The portfolio includes multiple pages, each serving a specific purpose to showcase different aspects of the individual's skills, experience, and projects. The portfolio is designed to be visually appealing, responsive across various devices, and easy to navigate.
