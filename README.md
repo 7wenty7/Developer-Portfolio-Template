@@ -1,5 +1,5 @@
 # Developer-Portfolio-Template
- ![Snapshot]([image-ur](https://i.ibb.co/93YjyH1/Portfolio-Slim-Bouras.jpg)l)
+[Portfolio-Slim-Bouras.jpg](https://postimg.cc/5Yj3PK5Q)
 ## Demo
 Check out the live demo: [SlimBouras.com](https://slimbouras.com/)
 
